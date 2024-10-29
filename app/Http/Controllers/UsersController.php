@@ -2,12 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Users;
+
 use Illuminate\Http\Request;
 
 class UsersController extends Controller
 {
    public function register()
    {
-    return "esto es el registro";
+      $users = Users::all();
+
+      return view ('users', compact('users'));
    }
 }
