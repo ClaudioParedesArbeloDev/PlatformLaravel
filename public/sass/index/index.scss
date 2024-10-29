@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import '../colors.scss';
+
+body{
+    background: $primary-color;
+    margin: 0;
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: $text-color;
+    padding: 40px 0 40px 0;
+    border-bottom: 3px solid $secondary-color;
+    
+}
+
+.logo{
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    div{
+        align-items: center;
+        padding: 10px 15px 10px 15px;
+        border-radius: 10px;
+    }
+}
+
+
+
+
+.textLogo1{
+    
+        font-size: 1.8rem;
+        font-weight: 600;
+        font-family: "Montserrat", serif;
+        color: $text-color;
+        text-decoration: none;
+        padding: 5px;
+        margin: 0;
+}
+
+.textLogo2{
+    
+        font-size: .9rem;
+        font-family: "Space Grotesk", serif;
+        letter-spacing: 12px;
+        color: $text-color;
+        text-decoration: none;
+        padding: 5px;
+        margin: 0;
+}
+
+.logo:hover{
+      div{
+        background: $light-color;
+        p{
+            color: $primary-color;
+            transform: .6s;
+            transition: .6s;
+        }
+        transform: .6s;
+        transition: .6s;
+      }
+    
+}
+
+
+.navIndex{
+    display: flex;  
+    font-family: "Space Grotesk", serif;
+    a{
+        color: $text-color;
+        padding: 5px;
+        margin: 2px;;
+        text-decoration: none;
+        li{
+            list-style: none;
+            padding: 5px 15px 5px 15px;
+            border-radius: 5px;
+        };
+        li:hover{
+            color: $primary-color;
+            background: $light-color;
+            transform: .3s;
+            transition: .3s;
+        }
+    }
+}
+
+.login{
+    font-family: "Space Grotesk", serif;
+    text-decoration: none;
+    li{
+        padding: 5px 10px 5px 10px;
+        border-radius: 10px;
+        list-style: none;
+        color: $text-color;
+        font-size: 1rem;
+        i{
+            margin-right: 10px;
+        }
+    }
+}
+
+
+
+.login:hover{
+    li{
+        transition: .6s;
+        transform: .6s;
+        background: $light-color;
+        color: $primary-color;
+        i{
+            color: $primary-color;
+        }
+    }
+    
+}
+
+.signup{
+    font-family: "Space Grotesk", serif;
+    text-decoration: none;
+    li{
+        padding: 5px 10px 5px 10px;
+        border-radius: 10px;
+        list-style: none;
+        color: $text-color;
+        font-size: 1rem;
+        i{
+            margin-right: 10px;
+        }
+    }
+}
+
+.signup:hover{
+    li{
+        transition: .6s;
+        transform: .6s;
+        background: $light-color;
+        color: $primary-color;
+        i{
+            color: $primary-color;
+        }
+    }
+    
+}
+
+.footerIndex{
+    display: flex ;
+    padding: 30px 0 30px 0 ;
+    justify-content: space-around;
+    font-family: "Space Grotesk", serif;
+    color: $text-color;
+}
+
+.socialMediaFooter{
+    display: flex;
+    color: $text-color;
+    
+}
+
+.iconSocialMedia{
+    text-decoration: none;
+    i{
+        color: $text-color;
+        margin: 10px;
+        font-size: 2rem;
+    }
+}
+
+.iconSocialMedia:hover{
+    
+    i{
+        color:$light-color;
+        scale: 1.2;
+        transition: .6s;
+        transform: .6s;
+    }
+}
