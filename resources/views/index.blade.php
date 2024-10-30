@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'Code & Lens')
+@section('title', 'Code & Lens - Users')
     
 
 
 @section('content')
 
-    <h1>Hello World</h1>
+    <h1>Esto es el index</h1>
     
 @endsection

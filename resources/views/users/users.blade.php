@@ -9,8 +9,12 @@
     <h1>Todos los usuarios</h1>
 
     @foreach ($users as $user)
-    <li>{{ $user->name }}</li>
-    <li>{{ $user->lastname }}</li>
+    <li>
+        <a href="/users/{{ $user->id }}">
+        {{ $user->name }}
+        </a>
+    </li>
+    
         
     @endforeach
     
