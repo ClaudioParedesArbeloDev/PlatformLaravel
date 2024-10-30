@@ -4,7 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Models\Users;
 
+use Illuminate\Support\Facades\Hash;
+
 use Illuminate\Http\Request;
+
+use function Laravel\Prompts\password;
 
 class UsersController extends Controller
 {
@@ -33,7 +37,7 @@ class UsersController extends Controller
       $user->dni=$request->dni;
       $user->date_birth=$request->date_birth;
       $user->username=$request->username;
-      $user->password=$request->password;
+      $user->password = Hash::make($request->password);
 
       $user->save();
 

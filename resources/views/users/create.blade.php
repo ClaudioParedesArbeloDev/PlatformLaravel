@@ -6,49 +6,41 @@
 
 @section('content')
 
-    <link rel="stylesheet" href="{{asset}}">
+    <link rel="stylesheet" href="{{asset('sass/create/create.css') }}">
 
-    <h2>Ingrese sus datos</h2>
-    <form action="/users" method="POST">
+    <h2 class="titleCreate">Register</h2>
+    <form action="/users" method="POST" class="formCreate">
         @csrf
-        <label for="">
-            Nombre:
-            <input type="text" name="name">
-        </label>
-        <label for="">
-            Apellido:
-            <input type="text" name="lastname">
-        </label>
-        <label for="">
-            Direccion:
-            <input type="text" name="address">
-        </label>
-        <label for="">
-            Telefono:
-            <input type="text" name="phone">
-        </label>
-        <label for="">
-            Email:
-            <input type="text" name="email">
-        </label>
-        <label for="">
-            DNI:
-            <input type="text" name="dni">
-        </label>
-        <label for="">
-            Fecha de nacimiento:
-            <input type="text" name="date_birth">
-        </label>
-        <label for="">
-            Usuario:
-            <input type="text" name="username">
-        </label>
-        <label for="">
-            Contraseña:
-            <input type="password" name="password">
-        </label>
+        <label for="name">Name:</label>
+            
+            <input type="text" id="name" name="name">
+        
+        <label for="lastname">LastName:</label>
+            <input type="text"  id="lastname" name="lastname">
+        
+        <label for="address">Address:</label>
+            <input type="text" id="address" name="address">
+        
+        <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone">
+        
+        <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+        
+        <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni">
+        
+        <label for="date_birth">Date of Birth:</label>
+            <input type="text" id="date_birth" name="date_birth">
+        
+        <label for="username">UserName:</label>
+            <input type="text" id="username" name="username">
+        
+        <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+        
 
-        <button type="submit">Registrar</button>
+        <button type="submit">Register</button>
     </form>
     
 @endsection
