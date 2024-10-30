@@ -4,11 +4,12 @@
   font-size: 2rem;
   color: #eac435;
   text-align: center;
-  height: 40px;
+  height: 80px;
 }
 
 .formCreate {
   display: grid;
+  gap: 10px;
   grid-template-columns: 150px 330px 150px 330px;
   justify-content: center;
   align-items: center;
