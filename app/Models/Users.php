@@ -16,8 +16,41 @@ class Users extends Model
                 return strtolower($value);
             },
             get: function ($value) {
-                return ucfirst($value);
+                return ucwords($value);
             }
+        );
+    }
+
+    protected function lastname(): Attribute
+    {
+        return Attribute::make(
+            set: function ($value) {
+                return strtolower($value);
+            },
+            get: function ($value) {
+                return ucwords($value);
+            }
+        );
+    }
+
+    protected function address(): Attribute
+    {
+        return Attribute::make(
+            set: function ($value) {
+                return strtolower($value);
+            },
+            get: function ($value) {
+                return ucwords($value);
+            }
+        );
+    }
+
+    protected function email(): Attribute
+    {
+        return Attribute::make(
+            set: function ($value) {
+                return strtolower($value);
+            },
         );
     }
 }

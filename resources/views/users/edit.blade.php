@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="{{asset('sass/create/create.css') }}">
     <div>
-    <h2 class="titleCreate">Register</h2>
+    <h2 class="titleCreate">Edit User</h2>
     <form action="/users/{{$user->id}}" method="POST" class="formCreate">
         
         @csrf

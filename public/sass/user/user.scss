@@ -4,11 +4,12 @@
 
 .user{
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
     font-family: "Space Grotesk", serif;
     color: $text-color;
+    padding: 0 240px;
     
     
     h2{
@@ -16,8 +17,13 @@
         font-size: 1.3rem;
         justify-self: center;
     }
-    p{
+    dt{
+        font-weight: bold;
+        color: $light-color;
         font-size: 1.2rem;
+    }
+    p{
+        font-size: 1.1rem;
         margin-right: 10px;
     }
 

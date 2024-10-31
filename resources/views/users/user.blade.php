@@ -10,14 +10,14 @@
     <div class="user">
         <h2>Datos Alumno: {{$user->lastname}} {{$user->name}}</h2>
         
-        <p>Name:</p> <p>{{$user->name}}</p>
-        <p>LastName:</p> <p>{{$user->lastname}}</p>
-        <p>Address:</p> <p>{{$user->address}}</p>
-        <p>Phone:</p> <p>{{$user->phone}}</p>
-        <p>Email:</p> <p>{{$user->email}}</p>
-        <p>DNI:</p> <p>{{$user->dni}}</p>
-        <p>Date of Birth:</p> <p>{{$user->date_birth}}</p>
-        <p>UserName:</p> <p>{{$user->username}}</p>
+        <dt>Name:</dt> <p>{{$user->name}}</p>
+        <dt>LastName:</dt> <p>{{$user->lastname}}</p>
+        <dt>Address:</dt> <p>{{$user->address}}</p>
+        <dt>Phone:</dt> <p>{{$user->phone}}</p>
+        <dt>Email:</dt> <p>{{$user->email}}</p>
+        <dt>DNI:</dt> <p>{{$user->dni}}</p>
+        <dt>Date of Birth:</dt> <p>{{$user->date_birth}}</p>
+        <dt>UserName:</dt> <p>{{$user->username}}</p>
         
         <a href="/users/{{$user->id}}/edit">Edit User</a>
         

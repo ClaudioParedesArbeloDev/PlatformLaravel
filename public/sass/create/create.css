@@ -21,7 +21,7 @@
 }
 .formCreate input {
   font-family: "Space Grotesk", serif;
-  background: #eac435;
+  background: rgba(234, 196, 53, 0.8);
   border: none;
   border-radius: 10px;
   height: 30px;
