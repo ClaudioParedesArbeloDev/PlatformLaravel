@@ -8,6 +8,8 @@ use App\Models\Users;
 
 Route::get('/', [HomeController::class, 'index']);
 
+Route::get('/login', [HomeController::class, 'login']);
+
 Route::get('/users', [UsersController::class, 'index']);
 
 Route::get('/users/create', [UsersController::class, 'create']);

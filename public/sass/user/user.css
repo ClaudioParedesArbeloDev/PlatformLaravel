@@ -17,10 +17,15 @@
   font-weight: bold;
   color: #eac435;
   font-size: 1.2rem;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eac435;
 }
 .user p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-right: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eac435;
+  border-right: 1px solid #eac435;
 }
 .user a {
   background: #03cea4;
