@@ -5,7 +5,19 @@
 
 
 @section('content')
+    <link rel="stylesheet" href="{{asset('sass/login/login.css') }}">
 
-    <h1>Esto es el Login</h1>
+    <div class="loginContainer">
+        <h2 class="loginTitle">Login</h2>
+        <form action="" method="POST">
+            @csrf
+            <div class="loginForm">
+                <input type="text" name="username" placeholder="Username">
+                <input type="password" name="password" placeholder="Password">
+                <button type="submit">Login</button>
+                <a href="{{route('users.create')}}" class="signup">Don't have an account? Sign up here!</a>
+            </div>
+
+    </div>
     
 @endsection

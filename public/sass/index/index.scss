@@ -183,3 +183,10 @@ body{
         transform: .6s;
     }
 }
+
+.copyright:hover{
+    color: $light-color;
+    scale: 1.3;
+    transform: .6s;
+    transition: .6s;
+}

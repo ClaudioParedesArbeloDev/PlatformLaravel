@@ -26,9 +26,8 @@
             </tr>  
         </thead>
         <tbody class="usersTableBody">
-    @foreach ($users as $user)
+        @foreach ($users as $user)
         <tr>
-        
         <td>{{ $user->id }}</td>
         <td>{{ $user->name }}</td>
         <td>{{ $user->lastname }}</td>
@@ -40,7 +39,7 @@
         <td>{{ $user->username }}</td>
         <td><a href="/users/{{$user->id}}">Editar</a></td>
         </tr>
-    @endforeach
+         @endforeach
     </tbody>
         
     </table>
